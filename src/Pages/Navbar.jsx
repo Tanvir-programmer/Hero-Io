@@ -2,6 +2,9 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+import { IoMdHome } from "react-icons/io";
+import { FaAppStore } from "react-icons/fa";
+import { MdInstallDesktop } from "react-icons/md";
 const Navbar = () => {
   return (
     <div>
@@ -36,7 +39,7 @@ const Navbar = () => {
                 <Link to="/apps">Apps</Link>
               </li>
               <li>
-                <Link to="">Installation</Link>
+                <Link to="/Installation">Installation</Link>
               </li>
             </ul>
           </div>
@@ -48,13 +51,36 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Home</a>
+              <div className="flex gap-1 items-center font-semibold">
+                <div className="text-black">
+                  <IoMdHome />
+                </div>{" "}
+                <div className="font-semibold">
+                  <Link to="/">Home</Link>
+                </div>
+              </div>
             </li>
             <li>
-              <a href="">Apps</a>
+              <div className="flex justify-center items-center gap-1 ">
+                <div>
+                  <FaAppStore />
+                </div>
+                <div className="font-semibold">
+                  {" "}
+                  <Link to="/apps">Apps</Link>
+                </div>
+              </div>
             </li>
             <li>
-              <a>Installation</a>
+              <div className="flex justify-center items-center gap-1">
+                <div>
+                  <MdInstallDesktop />
+                </div>
+
+                <div className="font-semibold">
+                  <Link to="/Installation">Installation</Link>
+                </div>
+              </div>
             </li>
           </ul>
         </div>

@@ -1,11 +1,20 @@
 import React from "react";
+import { useLoaderData } from "react-router-dom";
+import AppDetails from "./AppDetails.jsx";
+const AllApps = () => {
+  const data = useLoaderData();
 
-const Allapps = () => {
   return (
-    <div>
-      <h1>yallah nothing is here</h1>
+    <div className="max-w-11/12 mx-auto">
+      <h1 className="text-center text-3xl font-bold my-4.5">
+        Our All Applications
+      </h1>
+      <p className="text-center mb-10 opacity-70">
+        Explore All Apps on the Market developed by us. We code for Millions
+      </p>
+      <AppDetails data={data}></AppDetails>
     </div>
   );
 };
 
-export default Allapps;
+export default AllApps;

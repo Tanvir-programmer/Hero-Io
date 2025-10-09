@@ -1,272 +1,362 @@
 [
   {
-    "image": "/images/app-icons/photo-editor.png",
-    "title": "Pro Photo Editor",
-    "companyName": "Creative Studio",
-    "id": 101,
-    "description": "Powerful tool for advanced photo editing, filters, and effects.",
-    "size": 75.5,
-    "reviews": 124500,
+    "image": "https://picsum.photos/200/200?image=1",
+    "title": "PhotoFixer",
+    "companyName": "SnapLab Studios",
+    "id": 1,
+    "description": "Enhance your photos instantly with AI-powered editing tools.",
+    "size": 45,
+    "reviews": 12450,
     "ratingAvg": 4.6,
     "downloads": 5000000,
     "ratings": [
-      { "name": "1 star", "count": 2500 },
-      { "name": "2 star", "count": 4000 },
-      { "name": "3 star", "count": 10000 },
-      { "name": "4 star", "count": 38000 },
-      { "name": "5 star", "count": 70000 }
+      { "name": "1 star", "count": 340 },
+      { "name": "2 star", "count": 650 },
+      { "name": "3 star", "count": 1250 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 7410 }
     ]
   },
   {
-    "image": "/images/app-icons/task-manager.png",
-    "title": "Simple Task Tracker",
-    "companyName": "Productivity Hub",
-    "id": 102,
-    "description": "Minimalist and efficient task management and to-do list app.",
-    "size": 12.1,
-    "reviews": 35200,
+    "image": "https://picsum.photos/200/200?image=2",
+    "title": "TaskMaster",
+    "companyName": "FocusWare",
+    "id": 2,
+    "description": "Organize your day efficiently and track productivity with ease.",
+    "size": 32,
+    "reviews": 9600,
+    "ratingAvg": 4.3,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 420 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 4280 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?image=3",
+    "title": "TravelMet",
+    "companyName": "JetWave Inc.",
+    "id": 3,
+    "description": "Discover destinations and plan your perfect vacation easily.",
+    "size": 56,
+    "reviews": 21200,
+    "ratingAvg": 4.7,
+    "downloads": 7800000,
+    "ratings": [
+      { "name": "1 star", "count": 820 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2200 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 13200 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?image=4",
+    "title": "GameZone",
+    "companyName": "EpicPlay",
+    "id": 4,
+    "description": "Play trending games and compete with players around the world.",
+    "size": 150,
+    "reviews": 78500,
     "ratingAvg": 4.8,
-    "downloads": 1000000,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 2200 },
+      { "name": "2 star", "count": 3200 },
+      { "name": "3 star", "count": 8400 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 49700 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?image=5",
+    "title": "ShopEasy",
+    "companyName": "Trendify",
+    "id": 5,
+    "description": "Shop from your favorite brands and enjoy exclusive deals daily.",
+    "size": 60,
+    "reviews": 36500,
+    "ratingAvg": 4.5,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 2200 },
+      { "name": "3 star", "count": 4300 },
+      { "name": "4 star", "count": 9800 },
+      { "name": "5 star", "count": 18700 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?image=6",
+    "title": "FitTrack",
+    "companyName": "BodySync Ltd.",
+    "id": 6,
+    "description": "Track workouts, calories, and fitness goals in one place.",
+    "size": 38,
+    "reviews": 15400,
+    "ratingAvg": 4.4,
+    "downloads": 4800000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2400 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 7100 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?image=7",
+    "title": "StreamFlix",
+    "companyName": "VisionWorks",
+    "id": 7,
+    "description": "Stream your favorite movies and shows anytime, anywhere.",
+    "size": 110,
+    "reviews": 89000,
+    "ratingAvg": 4.8,
+    "downloads": 25000000,
+    "ratings": [
+      { "name": "1 star", "count": 3100 },
+      { "name": "2 star", "count": 4200 },
+      { "name": "3 star", "count": 9500 },
+      { "name": "4 star", "count": 18000 },
+      { "name": "5 star", "count": 54200 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?image=8",
+    "title": "SpellWell",
+    "companyName": "EduMind",
+    "id": 8,
+    "description": "Improve your vocabulary and spelling through fun challenges.",
+    "size": 27,
+    "reviews": 7400,
+    "ratingAvg": 4.2,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 2790 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?image=9",
+    "title": "NewsReader",
+    "companyName": "InfoFeed",
+    "id": 9,
+    "description": "Stay updated with real-time breaking news and global headlines.",
+    "size": 41,
+    "reviews": 12800,
+    "ratingAvg": 4.5,
+    "downloads": 6200000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 3800 },
+      { "name": "5 star", "count": 5400 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?image=10",
+    "title": "NoteVault",
+    "companyName": "MindSpace",
+    "id": 10,
+    "description": "Capture your ideas, notes, and tasks effortlessly in the cloud.",
+    "size": 25,
+    "reviews": 9400,
+    "ratingAvg": 4.4,
+    "downloads": 3100000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1700 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 3400 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?image=11",
+    "title": "CodeMate",
+    "companyName": "DevCore",
+    "id": 11,
+    "description": "Collaborate on coding projects and debug with your teammates.",
+    "size": 66,
+    "reviews": 7200,
+    "ratingAvg": 4.3,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 2600 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?image=12",
+    "title": "Budgetly",
+    "companyName": "FinMate",
+    "id": 12,
+    "description": "Manage your expenses and save money with smart insights.",
+    "size": 29,
+    "reviews": 13400,
+    "ratingAvg": 4.6,
+    "downloads": 5800000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 6800 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?image=13",
+    "title": "WeatherNow",
+    "companyName": "SkyAlert",
+    "id": 13,
+    "description": "Get live weather updates and accurate forecasts worldwide.",
+    "size": 34,
+    "reviews": 9900,
+    "ratingAvg": 4.5,
+    "downloads": 7200000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 4100 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?image=14",
+    "title": "CookBook",
+    "companyName": "HomeChef",
+    "id": 14,
+    "description": "Find, save, and share your favorite recipes from around the world.",
+    "size": 52,
+    "reviews": 8700,
+    "ratingAvg": 4.7,
+    "downloads": 4100000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 4300 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?image=15",
+    "title": "LearnPro",
+    "companyName": "EduLink",
+    "id": 15,
+    "description": "Learn new skills through video lessons and practice tests.",
+    "size": 70,
+    "reviews": 19300,
+    "ratingAvg": 4.6,
+    "downloads": 9500000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2300 },
+      { "name": "4 star", "count": 4100 },
+      { "name": "5 star", "count": 10800 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?image=16",
+    "title": "HealthSync",
+    "companyName": "WellTech",
+    "id": 16,
+    "description": "Monitor your sleep, hydration, and steps for better health.",
+    "size": 43,
+    "reviews": 14100,
+    "ratingAvg": 4.5,
+    "downloads": 6400000,
     "ratings": [
       { "name": "1 star", "count": 500 },
       { "name": "2 star", "count": 800 },
       { "name": "3 star", "count": 2100 },
-      { "name": "4 star", "count": 10800 },
-      { "name": "5 star", "count": 21000 }
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 7300 }
     ]
   },
   {
-    "image": "/images/app-icons/weather.png",
-    "title": "Global Weather Live",
-    "companyName": "Accurate Forecasts Inc.",
-    "id": 103,
-    "description": "Real-time weather updates, radar, and 14-day forecasts.",
-    "size": 45.9,
-    "reviews": 210000,
-    "ratingAvg": 4.3,
-    "downloads": 15000000,
-    "ratings": [
-      { "name": "1 star", "count": 9000 },
-      { "name": "2 star", "count": 15000 },
-      { "name": "3 star", "count": 30000 },
-      { "name": "4 star", "count": 66000 },
-      { "name": "5 star", "count": 90000 }
-    ]
-  },
-  {
-    "image": "/images/app-icons/cooking.png",
-    "title": "Chef's Delight Recipes",
-    "companyName": "Foodie Apps",
-    "id": 104,
-    "description": "Thousands of recipes with step-by-step cooking guides.",
-    "size": 98.7,
-    "reviews": 89000,
-    "ratingAvg": 4.5,
-    "downloads": 3500000,
-    "ratings": [
-      { "name": "1 star", "count": 1800 },
-      { "name": "2 star", "count": 2700 },
-      { "name": "3 star", "count": 7500 },
-      { "name": "4 star", "count": 27000 },
-      { "name": "5 star", "count": 50000 }
-    ]
-  },
-  {
-    "image": "/images/app-icons/finance.png",
-    "title": "Budget Tracker Pro",
-    "companyName": "Money Savvy Ltd.",
-    "id": 105,
-    "description": "Track expenses, manage budgets, and save money effectively.",
-    "size": 33.2,
-    "reviews": 61200,
+    "image": "https://picsum.photos/200/200?image=17",
+    "title": "MusicWave",
+    "companyName": "Soundify",
+    "id": 17,
+    "description": "Stream and download your favorite songs in high quality.",
+    "size": 95,
+    "reviews": 28400,
     "ratingAvg": 4.7,
-    "downloads": 2800000,
+    "downloads": 17000000,
     "ratings": [
       { "name": "1 star", "count": 1100 },
-      { "name": "2 star", "count": 1500 },
-      { "name": "3 star", "count": 4600 },
-      { "name": "4 star", "count": 18000 },
-      { "name": "5 star", "count": 36000 }
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 3900 },
+      { "name": "4 star", "count": 7100 },
+      { "name": "5 star", "count": 14300 }
     ]
   },
   {
-    "image": "/images/app-icons/meditation.png",
-    "title": "Calm Mind",
-    "companyName": "Zen Life Apps",
-    "id": 106,
-    "description": "Guided meditations and sleep stories for relaxation and focus.",
-    "size": 150.8,
-    "reviews": 350000,
-    "ratingAvg": 4.9,
-    "downloads": 25000000,
-    "ratings": [
-      { "name": "1 star", "count": 3000 },
-      { "name": "2 star", "count": 4500 },
-      { "name": "3 star", "count": 12500 },
-      { "name": "4 star", "count": 80000 },
-      { "name": "5 star", "count": 250000 }
-    ]
-  },
-  {
-    "image": "/images/app-icons/games.png",
-    "title": "Galactic Runner 3D",
-    "companyName": "Hyper Games Studio",
-    "id": 107,
-    "description": "Action-packed endless runner game with stunning 3D graphics.",
-    "size": 250.0,
-    "reviews": 980000,
-    "ratingAvg": 4.4,
-    "downloads": 50000000,
-    "ratings": [
-      { "name": "1 star", "count": 45000 },
-      { "name": "2 star", "count": 60000 },
-      { "name": "3 star", "count": 105000 },
-      { "name": "4 star", "count": 300000 },
-      { "name": "5 star", "count": 470000 }
-    ]
-  },
-  {
-    "image": "/images/app-icons/maps.png",
-    "title": "City Navigator GPS",
-    "companyName": "Map Tech Solutions",
-    "id": 108,
-    "description": "Offline maps, turn-by-turn navigation, and traffic updates.",
-    "size": 88.4,
-    "reviews": 150000,
-    "ratingAvg": 4.2,
-    "downloads": 8000000,
-    "ratings": [
-      { "name": "1 star", "count": 10000 },
-      { "name": "2 star", "count": 18000 },
-      { "name": "3 star", "count": 25000 },
-      { "name": "4 star", "count": 45000 },
-      { "name": "5 star", "count": 52000 }
-    ]
-  },
-  {
-    "image": "/images/app-icons/learning.png",
-    "title": "Code Mastery",
-    "companyName": "Developer Tools Inc.",
-    "id": 109,
-    "description": "Learn to code with interactive lessons and programming challenges.",
-    "size": 65.1,
-    "reviews": 70000,
-    "ratingAvg": 4.7,
-    "downloads": 4000000,
-    "ratings": [
-      { "name": "1 star", "count": 1200 },
-      { "name": "2 star", "count": 1800 },
-      { "name": "3 star", "count": 5000 },
-      { "name": "4 star", "count": 20000 },
-      { "name": "5 star", "count": 42000 }
-    ]
-  },
-  {
-    "image": "/images/app-icons/music.png",
-    "title": "StreamBeat Music",
-    "companyName": "Audio Waves Inc.",
-    "id": 110,
-    "description": "Millions of songs, curated playlists, and offline playback.",
-    "size": 105.3,
-    "reviews": 550000,
-    "ratingAvg": 4.5,
-    "downloads": 50000000,
-    "ratings": [
-      { "name": "1 star", "count": 15000 },
-      { "name": "2 star", "count": 20000 },
-      { "name": "3 star", "count": 65000 },
-      { "name": "4 star", "count": 150000 },
-      { "name": "5 star", "count": 300000 }
-    ]
-  },
-  {
-    "image": "/images/app-icons/social.png",
-    "title": "ConnectSphere",
-    "companyName": "Global Networks",
-    "id": 111,
-    "description": "New generation social networking platform for sharing ideas.",
-    "size": 110.0,
-    "reviews": 450000,
-    "ratingAvg": 4.1,
-    "downloads": 30000000,
-    "ratings": [
-      { "name": "1 star", "count": 30000 },
-      { "name": "2 star", "count": 45000 },
-      { "name": "3 star", "count": 75000 },
-      { "name": "4 star", "count": 120000 },
-      { "name": "5 star", "count": 180000 }
-    ]
-  },
-  {
-    "image": "/images/app-icons/fitness.png",
-    "title": "FitLife Trainer",
-    "companyName": "Health & Wellness Co.",
-    "id": 112,
-    "description": "Personalized workout plans, progress tracking, and diet tips.",
-    "size": 90.2,
-    "reviews": 180000,
+    "image": "https://picsum.photos/200/200?image=18",
+    "title": "ChatConnect",
+    "companyName": "ComNet",
+    "id": 18,
+    "description": "Chat, call, and connect with your friends securely worldwide.",
+    "size": 77,
+    "reviews": 21300,
     "ratingAvg": 4.6,
-    "downloads": 10000000,
-    "ratings": [
-      { "name": "1 star", "count": 3000 },
-      { "name": "2 star", "count": 4500 },
-      { "name": "3 star", "count": 12500 },
-      { "name": "4 star", "count": 50000 },
-      { "name": "5 star", "count": 110000 }
-    ]
-  },
-  {
-    "image": "/images/app-icons/reading.png",
-    "title": "E-Book Reader",
-    "companyName": "Digital Library",
-    "id": 113,
-    "description": "Read thousands of books and magazines offline with a custom reader.",
-    "size": 25.4,
-    "reviews": 95000,
-    "ratingAvg": 4.3,
-    "downloads": 6000000,
-    "ratings": [
-      { "name": "1 star", "count": 5000 },
-      { "name": "2 star", "count": 7000 },
-      { "name": "3 star", "count": 15000 },
-      { "name": "4 star", "count": 30000 },
-      { "name": "5 star", "count": 38000 }
-    ]
-  },
-  {
-    "image": "/images/app-icons/camera.png",
-    "title": "Advanced Camera HD",
-    "companyName": "Pixel Perfect Labs",
-    "id": 114,
-    "description": "Professional camera controls, manual focus, and raw image support.",
-    "size": 60.5,
-    "reviews": 110000,
-    "ratingAvg": 4.5,
-    "downloads": 7500000,
-    "ratings": [
-      { "name": "1 star", "count": 2200 },
-      { "name": "2 star", "count": 3300 },
-      { "name": "3 star", "count": 9500 },
-      { "name": "4 star", "count": 35000 },
-      { "name": "5 star", "count": 60000 }
-    ]
-  },
-  {
-    "image": "/images/app-icons/travel.png",
-    "title": "Wanderlust Planner",
-    "companyName": "Travel Global Inc.",
-    "id": 115,
-    "description": "Plan your trips, find attractions, and book hotels and flights.",
-    "size": 130.0,
-    "reviews": 220000,
-    "ratingAvg": 4.4,
     "downloads": 12000000,
     "ratings": [
-      { "name": "1 star", "count": 11000 },
-      { "name": "2 star", "count": 15000 },
-      { "name": "3 star", "count": 29000 },
-      { "name": "4 star", "count": 75000 },
-      { "name": "5 star", "count": 90000 }
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1300 },
+      { "name": "3 star", "count": 2400 },
+      { "name": "4 star", "count": 4100 },
+      { "name": "5 star", "count": 11600 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?image=19",
+    "title": "CryptoBase",
+    "companyName": "CoinWave",
+    "id": 19,
+    "description": "Buy, sell, and track cryptocurrencies securely and easily.",
+    "size": 58,
+    "reviews": 16600,
+    "ratingAvg": 4.5,
+    "downloads": 8700000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 2300 },
+      { "name": "4 star", "count": 3900 },
+      { "name": "5 star", "count": 8500 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?image=20",
+    "title": "LangMate",
+    "companyName": "LinguaTech",
+    "id": 20,
+    "description": "Practice speaking new languages with native speakers globally.",
+    "size": 47,
+    "reviews": 9400,
+    "ratingAvg": 4.4,
+    "downloads": 5200000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 2700 },
+      { "name": "5 star", "count": 3800 }
     ]
   }
 ]

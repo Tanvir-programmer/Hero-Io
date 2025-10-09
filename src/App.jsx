@@ -1,5 +1,5 @@
 import "./App.css";
-import Layouts from "./Layouts/Layouts";
+import React from "react";
 
 function App() {
   return <></>;

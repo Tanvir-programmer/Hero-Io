@@ -39,7 +39,7 @@ const Navbar = () => {
                 <Link to="/apps">Apps</Link>
               </li>
               <li>
-                <Link to="/Installation">Installation</Link>
+                <Link to="/installation">Installation</Link>
               </li>
             </ul>
           </div>
@@ -78,7 +78,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="font-semibold">
-                  <Link to="/Installation">Installation</Link>
+                  <Link to="/installation">Installation</Link>
                 </div>
               </div>
             </li>

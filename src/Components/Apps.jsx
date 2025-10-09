@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { MdOutlineFileDownload } from "react-icons/md";
+import { IoMdStar } from "react-icons/io";
+import { BiSolidCommentDots } from "react-icons/bi";
 import {
   BarChart,
   Bar,
@@ -14,13 +17,39 @@ function Apps({ app }) {
   const [totalRatings, setTotalRatings] = useState(0);
 
   useEffect(() => {
-    if (app?.ratings) {
+    if (app && app.ratings) {
       const total = app.ratings.reduce((sum, r) => sum + r.count, 0);
       setTotalRatings(total);
+    } else {
+      setTotalRatings(0);
+    }
+  }, [app]);
+
+  const [isInstalled, setIsInstalled] = useState(false);
+
+  useEffect(() => {
+    if (app) {
+      const installedApps = JSON.parse(
+        localStorage.getItem("installedApps") || "[]"
+      );
+      setIsInstalled(installedApps.includes(app.id));
+    } else {
+      setIsInstalled(false);
     }
   }, [app]);
 
   if (!app) return null;
+
+  const handleInstall = () => {
+    import("../Utility/addToDB")
+      .then(({ addToDB }) => {
+        addToDB(app.id);
+        setIsInstalled(true);
+      })
+      .catch((error) => {
+        console.error("Failed to load addToDB.js:", error);
+      });
+  };
 
   return (
     <div className="bg-[#e9e9e9] p-6">
@@ -48,32 +77,53 @@ function Apps({ app }) {
 
           <p className="text-gray-600 mb-4">{app.description}</p>
 
-          <div className="text-sm mb-4 flex justify-between gap-6">
-            <div className="text-center">
-              <div>Downloads:</div>
-              <h2 className="font-bold text-3xl">{app.downloads ?? "N/A"}</h2>
+          <div className="text-sm mb-4 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 sm:gap-6 w-full px-4">
+            <div className="text-center flex items-center gap-2">
+              <div>
+                <div>Downloads:</div>
+                <h2 className="font-bold text-3xl">{app.downloads ?? "N/A"}</h2>
+              </div>
+              <div className="text-5xl text-[#632ee3]">
+                <MdOutlineFileDownload />
+              </div>
             </div>
 
             <div className="text-center">
-              <div>Average Rating:</div>
-              <h2 className="font-bold text-3xl">{app.ratingAvg ?? "N/A"}</h2>
+              <div className="flex gap-3 items-center">
+                <div>
+                  <div>Average Rating:</div>
+                  <h2 className="font-bold text-3xl">
+                    {app.ratingAvg ?? "N/A"}
+                  </h2>
+                </div>
+                <div className="text-5xl text-[#632ee3]">
+                  <IoMdStar />
+                </div>
+              </div>
             </div>
 
             <div className="text-center">
-              <div>Total Ratings:</div>
-              <h2 className="font-bold text-3xl">{totalRatings}</h2>
+              <div className="flex gap-2 items-center">
+                <div>
+                  <div>Total Ratings:</div>
+                  <h2 className="font-bold text-3xl">{totalRatings}</h2>
+                </div>
+                <div className="text-5xl text-[#632ee3]">
+                  <BiSolidCommentDots />
+                </div>
+              </div>
             </div>
           </div>
 
-          <div>
-            {" "}
-            <Link
-              to="/apps"
-              className="inline-block mt-6 btn btn-primary font-bold"
-            >
-              Install
-            </Link>
-          </div>
+          <button
+            className={`btn font-bold bg-[#00d390] text-white text-2xl p-8 ${
+              isInstalled ? "opacity-60 cursor-not-allowed" : ""
+            }`}
+            onClick={handleInstall}
+            disabled={isInstalled}
+          >
+            {isInstalled ? "Installed" : "Install Now"}
+          </button>
         </div>
       </div>
 
@@ -93,6 +143,11 @@ function Apps({ app }) {
             <Bar dataKey="count" fill="#8884d8" radius={[6, 6, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
+      </div>
+
+      <div className="my-4">
+        <h1 className="font-bold text-4xl my-2.5">Description</h1>
+        <p>{app.description_details}</p>
       </div>
     </div>
   );

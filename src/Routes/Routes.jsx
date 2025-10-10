@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App.jsx";
 import Home from "../Pages/Home.jsx";
 import Layouts from "../Layouts/Layouts.jsx";
 import AllApps from "../Components/AllApps.jsx";
@@ -20,7 +19,7 @@ const router = createBrowserRouter([
       {
         path: "apps",
         element: <AllApps />,
-        loader: () => fetch("/data.json"),
+        loader: () => fetch("../data.json"),
       },
       {
         path: "installation",
@@ -30,13 +29,11 @@ const router = createBrowserRouter([
         path: "apps/:id",
         element: <AppDetailPage />,
         loader: async ({ params }) => {
-          const res = await fetch("/data.json"); // ✅ use absolute path
+          const res = await fetch("../data.json");
           if (!res.ok)
             throw new Response("Failed to load data", { status: 404 });
           const list = await res.json();
-
-          const found = list.find((a) => String(a.id) === String(params.id));
-          return found || null;
+          return list.find((a) => String(a.id) === String(params.id)) || null;
         },
       },
     ],

@@ -34,7 +34,11 @@ function Apps({ app }) {
       const installedApps = JSON.parse(
         localStorage.getItem("installedApps") || "[]"
       );
-      setIsInstalled(installedApps.includes(app.id));
+
+      const installed = installedApps.some(
+        (installedApp) => installedApp.id === app.id
+      );
+      setIsInstalled(installed);
     } else {
       setIsInstalled(false);
     }
@@ -46,9 +50,21 @@ function Apps({ app }) {
     const installedApps = JSON.parse(
       localStorage.getItem("installedApps") || "[]"
     );
-    if (!installedApps.includes(app.id)) {
-      installedApps.push(app.id);
+
+    if (!installedApps.some((installedApp) => installedApp.id === app.id)) {
+      const appToSave = {
+        id: app.id,
+        title: app.title,
+        companyName: app.companyName,
+        description: app.description,
+        image: app.image,
+        downloads: app.downloads,
+        ratingAvg: app.ratingAvg,
+      };
+
+      installedApps.push(appToSave);
       localStorage.setItem("installedApps", JSON.stringify(installedApps));
+
       setIsInstalled(true);
       toast.success(`${app.title} installed successfully! 🎉`);
     } else {
